@@ -1,0 +1,17 @@
+body{
+
+    background-color: #ccc;
+}
+.gamebox{
+height:100vh;
+display: flex;
+align-content: center;
+}
+.buttonbox{
+font-size:1.2rem;
+
+
+}
+.box2{
+    display: block;
+}
