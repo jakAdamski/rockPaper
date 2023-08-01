@@ -1,4 +1,16 @@
-var choices = ["ROCK", "PAPER", "SCISSORS"];
+var choices = document.querySelectorAll(".choice").addEventListener("click", () {
+    if(innerHTML=="ROCK")
+    {
+    return playerChoice == "ROCK";
+    }
+    else if(innerHTML=="PAPER"){
+        return playerChoice =="PAPER";
+    }
+    else{
+        return playerChoice =="SCISSORS";
+    }
+
+});
 
 
 
@@ -38,7 +50,7 @@ function game(playerChoice, computerChoice){
 
 
 }
-var playerChoice = "ROCK";
+var playerChoice = playerChoice;
 var computerChoice = getComputerChoice();
 console.log(game(playerChoice, computerChoice));
 

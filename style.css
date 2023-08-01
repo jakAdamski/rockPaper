@@ -3,15 +3,36 @@ body{
     background-color: #ccc;
 }
 .gamebox{
-height:100vh;
-display: flex;
+display: inline-flex;
 align-content: center;
+flex-direction: column;
+width:100%;
+flex-wrap: wrap;
+gap:20px;
+margin:0;
 }
 .buttonbox{
 font-size:1.2rem;
-
-
+margin-top:20px;
 }
+.choice{
+margin:20px;
+padding:10px;
+cursor: pointer;
+border:none;
+border-radius: 2px;
+}
+
 .box2{
-    display: block;
+ display:flex;
+ gap:100px;
+ align-items: space-evenly;
+}
+.result{
+
+margin-top:20px;
+display:flex;
+align-content: center;
+justify-content: center;
+
 }
