@@ -8,25 +8,24 @@
 </head>
 <body>
   
-  <div class = "gamebox">
-    <div class="buttonbox">
-      <button class = "choice">ROCK</button>
-      <button class = "choice">PAPER</button>
-      <button class = "choice">SCISSORS</button>
-    </div>
-    <div class ="box2">
-      <div class = "players"></div>
-      <div class = "players">COMPUTER</div>
-    </div>
-    <div class = "result">RESULT:</div>
+ <header>
+  <h1>ROCK PAPER SCISSORS GAME</h1>
+ </header>
 
+ <div class="score-board">
+    <div id ="user-label" class="badge">user</div>
+    <div id ="comp-label" class ="badge">comp</div>
+    <span id="user-score">0</span>:<span id="comp-score">0</span>
   </div>
-
-
-
-
-
-
+  <div class ="result">
+    <p>Paper covers rock bla bla bla</p>
+  </div>
+  <div class="choices">
+    <div class="choice" id="r">ROCK</div>
+    <div class="choice" id="p">PAPER</div>
+    <div class="choice" id="s">SCISSORS</div>
+  </div>
+  
   <script src="index.js"></script>  
 </body>
 </html>
