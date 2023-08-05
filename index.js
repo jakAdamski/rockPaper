@@ -4,12 +4,26 @@ const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("comp-score");
 const scoreBoard_div = document.querySelector(".score-board");
 const result_div = document.querySelector(".result > p");
-const rock_div = document.getElementById("r");
-const paper_div = document.getElementById("p");
-const scissors_div = document.getElementById("s");
-
+const rock_div = document.getElementById("rock");
+const paper_div = document.getElementById("paper");
+const scissors_div = document.getElementById("scissors");
 
 function main(){
+    rock_div.addEventListener('click', function(){
+        game("r");
+
+    })
+
+    paper_div.addEventListener('click', function(){
+        game("p");
+    
+    })
+    
+    scissors_div.addEventListener('click', function(){
+        game("s");
+        
+        })
+
 function getComputerChoice(){
     const choices = ["r","p","s"];
     const randomNum= Math.floor(Math.random() * choices.length)
@@ -18,15 +32,16 @@ function getComputerChoice(){
 function win(userChoice,computerChoice){
     userScore++
     userScore_span.innerHTML = userScore;
-    result_div.innerHTML = userChoice + "beats " + computerChoice + ". You win!";
+    result_div.innerHTML = "You win!";
 }
-function lose(){
+function lose(userChoice,computerChoice){
 
     computerScore ++;
     computerScore_span.innerHTML = computerScore;
+    result_div.innerHTML="Computer win!"
 }
 function draw(){
- document.result.innerHTML="DRAW";
+ result_div.innerHTML="Draw";
 }
 
 function game(userChoice){
@@ -51,21 +66,7 @@ function game(userChoice){
 }
 
 
-
-    rock_div.addEventListener('click', function(){
-        game("r");
-
-    })
-
-    paper_div.addEventListener('click', function(){
-        game("p");
     
-    })
-    
-    scissors_div.addEventListener('click', function(){
-        game("s");
-        
-        })
         
 }    
 main();
