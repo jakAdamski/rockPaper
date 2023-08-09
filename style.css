@@ -1,17 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 body{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-size:10px;
+    font-family: 'Rock Salt', cursive;
+    background-image: linear-gradient(
+  45deg,
+  hsl(0deg 0% 0%) 0%,
+  hsl(59deg 38% 13%) 6%,
+  hsl(57deg 20% 28%) 13%,
+  hsl(56deg 13% 45%) 21%,
+  hsl(55deg 17% 62%) 29%,
+  hsl(55deg 35% 81%) 38%,
+  hsl(66deg 66% 89%) 48%,
+  hsl(92deg 70% 87%) 58%,
+  hsl(125deg 73% 86%) 68%,
+  hsl(152deg 81% 79%) 78%,
+  hsl(168deg 86% 70%) 89%,
+  hsl(179deg 94% 49%) 100%);
+  background-repeat: space;
+  height: 100vh;
 }
 header{
-    height:50px;
-    background-color: #ccc;
     color:#020506;
     text-align: center;
+    font-family: 'Rock Salt', cursive;
 
 }
 header h1{
-    margin-top:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
 .score-board{
     border:3px solid black;
@@ -25,35 +46,42 @@ header h1{
     position:relative;
 }
 .badge{
-    background-color: #e25576;
+    background-color: #000000;
     color:white;
     font-size: 14px;
-    padding:2px 10px;   
+    padding:2px 10px;
+    font-family: 'Rock Salt', cursive;   
 }
 #user-label{
     position:absolute;
     top:40px;
-    left:-25px;
+    left:-30px;
 }
 #comp-label{
     position:absolute;
     top:40px;
-    right:-25px;
+    right:-30px;
 }
 .result{
     text-align: center;
     font-size: 30px;
+    font-family: 'Rock Salt', cursive;
 }
 .choices{
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+
 }
 .choice{
-    display: inline-block;
     text-align:center;
     margin:10px 20px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s ease-out;
+    font-size: 4rem;
 }
 .choice:hover{
-    background-color: lightsteelblue;
+    transform: scale(200%);
+
 }
